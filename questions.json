@@ -1,0 +1,1230 @@
+[
+  {
+    "id": "aws-clf-easy-d1-1",
+    "categoryKey": "cloud-concepts",
+    "conceptId": "cloud-benefits",
+    "level": "easy",
+    "difficulty": 2,
+    "prompt": "A retailer wants to open online stores in three new countries next month. It wants to avoid building or leasing data centers in those countries.\n\nWhich advantage of cloud computing does this rely on most?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Benefit from massive economies of scale",
+        "explanation": "Economies of scale lower unit prices; they do not put infrastructure in new countries."
+      },
+      {
+        "key": "B",
+        "text": "Go global in minutes"
+      },
+      {
+        "key": "C",
+        "text": "Trade fixed expense for variable expense",
+        "explanation": "Paying as you go changes how the company pays, not where it can deploy."
+      },
+      {
+        "key": "D",
+        "text": "Stop guessing capacity",
+        "explanation": "Capacity planning is about how much infrastructure to run, not where in the world it runs."
+      }
+    ],
+    "explanation": "AWS Regions around the world let a company deploy an application close to customers in another country in minutes, without building facilities there. That is the \"go global in minutes\" advantage. Economies of scale, variable expense and capacity are real advantages but none of them is about reaching new geographies. Read more: https://docs.aws.amazon.com/whitepapers/latest/aws-overview/six-advantages-of-cloud-computing.html",
+    "source": "original",
+    "sourceRef": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/six-advantages-of-cloud-computing.html",
+    "reviewStatus": "draft",
+    "tags": [
+      "clf-c02",
+      "domain-1",
+      "task-1.1",
+      "easy"
+    ],
+    "correctKey": "B"
+  },
+  {
+    "id": "aws-clf-hard-d1-3",
+    "categoryKey": "cloud-concepts",
+    "conceptId": "cloud-benefits",
+    "level": "hard",
+    "difficulty": 4,
+    "prompt": "Developers at a company used to wait weeks for new servers. On AWS they get resources in minutes, so trying a new idea costs little and a failed experiment can simply be shut down.\n\nWhich advantage of cloud computing is this?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Stop spending money running and maintaining data centers",
+        "explanation": "This advantage is about dropping undifferentiated facility work, not about how quickly teams can experiment."
+      },
+      {
+        "key": "B",
+        "text": "Benefit from massive economies of scale",
+        "explanation": "Economies of scale lower prices across all customers; they do not shorten the time to get resources."
+      },
+      {
+        "key": "C",
+        "text": "Go global in minutes",
+        "explanation": "Global reach is about deploying in more Regions, not about the time it takes developers to try ideas."
+      },
+      {
+        "key": "D",
+        "text": "Increase speed and agility"
+      }
+    ],
+    "explanation": "Cutting the time to get resources from weeks to minutes lowers the cost and time of experimentation, which is the \"increase speed and agility\" advantage. Data center savings and economies of scale are about cost, and going global is about geography. Read more: https://docs.aws.amazon.com/whitepapers/latest/aws-overview/six-advantages-of-cloud-computing.html",
+    "source": "original",
+    "sourceRef": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/six-advantages-of-cloud-computing.html",
+    "reviewStatus": "draft",
+    "tags": [
+      "clf-c02",
+      "domain-1",
+      "task-1.1",
+      "hard"
+    ],
+    "correctKey": "D"
+  },
+  {
+    "id": "aws-clf-easy-d1-5",
+    "categoryKey": "cloud-concepts",
+    "conceptId": "well-architected",
+    "level": "easy",
+    "difficulty": 2,
+    "prompt": "Which pillar of the AWS Well-Architected Framework focuses on minimizing the environmental impact of running cloud workloads?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Cost optimization",
+        "explanation": "Cost optimization is about delivering business value at the lowest price; using less can help, but environmental impact is the sustainability pillar."
+      },
+      {
+        "key": "B",
+        "text": "Performance efficiency",
+        "explanation": "Performance efficiency is about using computing resources efficiently to meet requirements, not about environmental impact."
+      },
+      {
+        "key": "C",
+        "text": "Sustainability"
+      },
+      {
+        "key": "D",
+        "text": "Operational excellence",
+        "explanation": "Operational excellence covers running and monitoring systems and improving processes."
+      }
+    ],
+    "explanation": "The sustainability pillar focuses on reducing the environmental impact of workloads, for example by maximizing utilization and choosing efficient hardware. Cost optimization, performance efficiency and operational excellence each have a different focus, even where their practices overlap. Read more: https://docs.aws.amazon.com/wellarchitected/latest/framework/sustainability.html",
+    "source": "original",
+    "sourceRef": "https://docs.aws.amazon.com/wellarchitected/latest/framework/sustainability.html",
+    "reviewStatus": "draft",
+    "tags": [
+      "clf-c02",
+      "domain-1",
+      "task-1.2",
+      "easy"
+    ],
+    "correctKey": "C"
+  },
+  {
+    "id": "aws-clf-veryhard-d1-9",
+    "categoryKey": "cloud-concepts",
+    "conceptId": "well-architected",
+    "level": "veryhard",
+    "difficulty": 5,
+    "prompt": "Which TWO are design principles of the cost optimization pillar of the AWS Well-Architected Framework? (Select TWO.)",
+    "options": [
+      {
+        "key": "A",
+        "text": "Scale horizontally to increase aggregate workload availability",
+        "explanation": "Scaling horizontally is a reliability design principle."
+      },
+      {
+        "key": "B",
+        "text": "Adopt a consumption model"
+      },
+      {
+        "key": "C",
+        "text": "Apply security at all layers",
+        "explanation": "Applying security at all layers is a security design principle."
+      },
+      {
+        "key": "D",
+        "text": "Measure overall efficiency"
+      },
+      {
+        "key": "E",
+        "text": "Make frequent, small, reversible changes",
+        "explanation": "Making frequent, small, reversible changes is an operational excellence design principle."
+      }
+    ],
+    "explanation": "The cost optimization pillar's principles are: implement cloud financial management, adopt a consumption model, measure overall efficiency, stop spending money on undifferentiated heavy lifting, and analyze and attribute expenditure. Scaling horizontally belongs to reliability, security at all layers to security, and small reversible changes to operational excellence. Read more: https://docs.aws.amazon.com/wellarchitected/latest/cost-optimization-pillar/design-principles.html",
+    "source": "original",
+    "sourceRef": "https://docs.aws.amazon.com/wellarchitected/latest/cost-optimization-pillar/design-principles.html",
+    "reviewStatus": "draft",
+    "tags": [
+      "clf-c02",
+      "domain-1",
+      "task-1.2",
+      "veryhard"
+    ],
+    "correctKeys": [
+      "B",
+      "D"
+    ]
+  },
+  {
+    "id": "aws-clf-hard-d1-12",
+    "categoryKey": "cloud-concepts",
+    "conceptId": "cloud-adoption",
+    "level": "hard",
+    "difficulty": 4,
+    "prompt": "A company must leave its data center within six months. It wants to move its applications to Amazon EC2 as they are, without changing their code or architecture.\n\nWhich migration strategy is this?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Rehost"
+      },
+      {
+        "key": "B",
+        "text": "Replatform",
+        "explanation": "Replatforming makes some cloud optimizations during the move, such as switching to a managed database."
+      },
+      {
+        "key": "C",
+        "text": "Refactor",
+        "explanation": "Refactoring re-architects the application for cloud-native features, which takes far longer than six months for most portfolios."
+      },
+      {
+        "key": "D",
+        "text": "Repurchase",
+        "explanation": "Repurchasing replaces the application with a different product, usually SaaS."
+      }
+    ],
+    "explanation": "Rehost (\"lift and shift\") moves applications to AWS without changes and is the fastest way to exit a data center. Replatform adds some optimization, refactor redesigns the application, and repurchase swaps it for another product. Read more: https://docs.aws.amazon.com/prescriptive-guidance/latest/large-migration-guide/migration-strategies.html",
+    "source": "original",
+    "sourceRef": "https://docs.aws.amazon.com/prescriptive-guidance/latest/large-migration-guide/migration-strategies.html",
+    "reviewStatus": "draft",
+    "tags": [
+      "clf-c02",
+      "domain-1",
+      "task-1.3",
+      "hard"
+    ],
+    "correctKey": "A"
+  },
+  {
+    "id": "aws-clf-easy-d1-15",
+    "categoryKey": "cloud-concepts",
+    "conceptId": "cloud-economics",
+    "level": "easy",
+    "difficulty": 2,
+    "prompt": "Because AWS aggregates usage from hundreds of thousands of customers, it can achieve lower costs and pass them on as lower prices over time.\n\nWhich advantage of cloud computing is this?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Trade fixed expense for variable expense",
+        "explanation": "Variable expense means paying only for what you use; it does not explain why the price per unit falls."
+      },
+      {
+        "key": "B",
+        "text": "Benefit from massive economies of scale"
+      },
+      {
+        "key": "C",
+        "text": "Stop guessing capacity",
+        "explanation": "Not guessing capacity is about scaling to demand, not about AWS's aggregate purchasing power."
+      },
+      {
+        "key": "D",
+        "text": "Increase speed and agility",
+        "explanation": "Speed and agility are about how quickly resources are available, not their price."
+      }
+    ],
+    "explanation": "Economies of scale come from AWS's aggregate usage: buying and operating at huge scale lowers costs, and those savings lead to lower pay-as-you-go prices. Variable expense, capacity and agility are other advantages. Read more: https://docs.aws.amazon.com/whitepapers/latest/aws-overview/six-advantages-of-cloud-computing.html",
+    "source": "original",
+    "sourceRef": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/six-advantages-of-cloud-computing.html",
+    "reviewStatus": "draft",
+    "tags": [
+      "clf-c02",
+      "domain-1",
+      "task-1.4",
+      "easy"
+    ],
+    "correctKey": "B"
+  },
+  {
+    "id": "aws-clf-hard-d1-17",
+    "categoryKey": "cloud-concepts",
+    "conceptId": "cloud-economics",
+    "level": "hard",
+    "difficulty": 4,
+    "prompt": "Monitoring shows that a company's Amazon EC2 instances average 8% CPU and 15% memory use, even at peak.\n\nWhich action follows the cost optimization practice of rightsizing?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Buy Reserved Instances for the current instance types to lower their hourly rate",
+        "explanation": "Committing to the current sizes locks in the oversized capacity for one or three years."
+      },
+      {
+        "key": "B",
+        "text": "Move the instances to Dedicated Hosts so each workload has its own server",
+        "explanation": "Dedicated Hosts address licensing and compliance needs and usually cost more; they do not fix oversizing."
+      },
+      {
+        "key": "C",
+        "text": "Turn on detailed monitoring so that the metrics are collected every minute",
+        "explanation": "More frequent metrics improve visibility but do not change the instance size or the bill."
+      },
+      {
+        "key": "D",
+        "text": "Move the workloads to smaller instance types that match their actual use"
+      }
+    ],
+    "explanation": "Rightsizing means matching instance types and sizes to workload performance and capacity needs at the lowest cost. Instances this underused should move to smaller sizes first; committing to the current sizes with Reserved Instances would lock in the waste, and Dedicated Hosts or extra monitoring do not reduce it. Read more: https://docs.aws.amazon.com/whitepapers/latest/cost-optimization-right-sizing/cost-optimization-right-sizing.html",
+    "source": "original",
+    "sourceRef": "https://docs.aws.amazon.com/whitepapers/latest/cost-optimization-right-sizing/cost-optimization-right-sizing.html",
+    "reviewStatus": "draft",
+    "tags": [
+      "clf-c02",
+      "domain-1",
+      "task-1.4",
+      "hard"
+    ],
+    "correctKey": "D"
+  },
+  {
+    "id": "aws-clf-easy-d2-1",
+    "categoryKey": "security",
+    "conceptId": "shared-responsibility",
+    "level": "easy",
+    "difficulty": 2,
+    "prompt": "A company runs its application on Amazon EC2 instances.\n\nUnder the AWS shared responsibility model, which task is the company's responsibility?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Patching the hypervisor that the instances run on",
+        "explanation": "The virtualization layer is part of the infrastructure AWS operates and patches."
+      },
+      {
+        "key": "B",
+        "text": "Replacing failed disks in the physical host servers",
+        "explanation": "Physical hardware is AWS's responsibility as part of security of the cloud."
+      },
+      {
+        "key": "C",
+        "text": "Securing the network hardware inside AWS data centers",
+        "explanation": "Data center networking equipment is AWS infrastructure that customers never manage."
+      },
+      {
+        "key": "D",
+        "text": "Applying security patches to the guest operating system"
+      }
+    ],
+    "explanation": "AWS is responsible for security of the cloud: hardware, the hypervisor, facilities and the global network. The customer is responsible for security in the cloud, and for Amazon EC2 that includes the guest operating system, its updates and patches, applications and security group configuration. Read more: https://docs.aws.amazon.com/whitepapers/latest/aws-risk-and-compliance/shared-responsibility-model.html",
+    "source": "original",
+    "sourceRef": "https://docs.aws.amazon.com/whitepapers/latest/aws-risk-and-compliance/shared-responsibility-model.html",
+    "reviewStatus": "draft",
+    "tags": [
+      "clf-c02",
+      "domain-2",
+      "task-2.1",
+      "easy"
+    ],
+    "correctKey": "D"
+  },
+  {
+    "id": "aws-clf-veryhard-d2-5",
+    "categoryKey": "security",
+    "conceptId": "shared-responsibility",
+    "level": "veryhard",
+    "difficulty": 5,
+    "prompt": "A company stores customer records in Amazon S3.\n\nWhich TWO tasks are the company's responsibility under the AWS shared responsibility model? (Select TWO.)",
+    "options": [
+      {
+        "key": "A",
+        "text": "Keeping the operating systems of the storage servers patched",
+        "explanation": "Amazon S3 is a managed service; AWS patches the servers behind it."
+      },
+      {
+        "key": "B",
+        "text": "Storing objects redundantly across devices in several Availability Zones",
+        "explanation": "S3 stores data redundantly across Availability Zones as part of the service; the customer does not build this."
+      },
+      {
+        "key": "C",
+        "text": "Configuring bucket policies and S3 Block Public Access settings"
+      },
+      {
+        "key": "D",
+        "text": "Classifying the data and deciding who is allowed to read it"
+      },
+      {
+        "key": "E",
+        "text": "Securely destroying disks that held the objects when they fail",
+        "explanation": "Media handling and destruction happen inside AWS data centers and are AWS's responsibility."
+      }
+    ],
+    "explanation": "Customers are always responsible for their data and for who can access it: classifying it, writing bucket policies and keeping Block Public Access on where needed. AWS operates the storage infrastructure, including server patching, redundant storage and media destruction. Read more: https://docs.aws.amazon.com/whitepapers/latest/aws-risk-and-compliance/shared-responsibility-model.html",
+    "source": "original",
+    "sourceRef": "https://docs.aws.amazon.com/whitepapers/latest/aws-risk-and-compliance/shared-responsibility-model.html",
+    "reviewStatus": "draft",
+    "tags": [
+      "clf-c02",
+      "domain-2",
+      "task-2.1",
+      "veryhard"
+    ],
+    "correctKeys": [
+      "C",
+      "D"
+    ]
+  },
+  {
+    "id": "aws-clf-easy-d2-7",
+    "categoryKey": "security",
+    "conceptId": "compliance-and-auditing",
+    "level": "easy",
+    "difficulty": 2,
+    "prompt": "A security team needs to find out which IAM user deleted an Amazon S3 bucket last week and from which IP address.\n\nWhich service records this information?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Amazon CloudWatch",
+        "explanation": "CloudWatch collects metrics, logs and alarms for resources; the record of who called which API comes from CloudTrail."
+      },
+      {
+        "key": "B",
+        "text": "AWS X-Ray",
+        "explanation": "X-Ray traces requests through an application to analyze performance, not AWS account API activity."
+      },
+      {
+        "key": "C",
+        "text": "AWS CloudTrail"
+      },
+      {
+        "key": "D",
+        "text": "Amazon Inspector",
+        "explanation": "Inspector scans workloads for software vulnerabilities; it does not log account activity."
+      }
+    ],
+    "explanation": "CloudTrail records actions taken by users, roles and services as events, including the API call, who made it, when and from which source IP address. CloudWatch is for metrics and alarms, X-Ray for application traces, and Inspector for vulnerability scanning. Read more: https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html",
+    "source": "original",
+    "sourceRef": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html",
+    "reviewStatus": "draft",
+    "tags": [
+      "clf-c02",
+      "domain-2",
+      "task-2.2",
+      "easy"
+    ],
+    "correctKey": "C"
+  },
+  {
+    "id": "aws-clf-hard-d2-10",
+    "categoryKey": "security",
+    "conceptId": "security-services",
+    "level": "hard",
+    "difficulty": 4,
+    "prompt": "A company wants to be alerted if an EC2 instance starts communicating with a known cryptocurrency-mining domain or if credentials are used from an unusual location. It wants this without deploying any agents.\n\nWhich service should it turn on?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Amazon Inspector",
+        "explanation": "Inspector looks for software vulnerabilities and network exposure, not malicious activity in logs."
+      },
+      {
+        "key": "B",
+        "text": "AWS Security Hub",
+        "explanation": "Security Hub aggregates and prioritizes findings from other services; it relies on detectors such as GuardDuty."
+      },
+      {
+        "key": "C",
+        "text": "AWS WAF",
+        "explanation": "AWS WAF filters web requests to applications; it does not analyze instance traffic or credential use."
+      },
+      {
+        "key": "D",
+        "text": "Amazon GuardDuty"
+      }
+    ],
+    "explanation": "GuardDuty is a threat detection service that analyzes data sources such as CloudTrail events, VPC Flow Logs and DNS logs to find malicious activity like crypto-mining or credential misuse, without agents for these sources. Inspector finds vulnerabilities, Security Hub aggregates findings, and AWS WAF filters web requests. Read more: https://docs.aws.amazon.com/guardduty/latest/ug/what-is-guardduty.html",
+    "source": "original",
+    "sourceRef": "https://docs.aws.amazon.com/guardduty/latest/ug/what-is-guardduty.html",
+    "reviewStatus": "draft",
+    "tags": [
+      "clf-c02",
+      "domain-2",
+      "task-2.2",
+      "hard"
+    ],
+    "correctKey": "D"
+  },
+  {
+    "id": "aws-clf-hard-d2-15",
+    "categoryKey": "security",
+    "conceptId": "root-user",
+    "level": "hard",
+    "difficulty": 4,
+    "prompt": "A company has a standalone AWS account outside AWS Organizations.\n\nWhich task requires signing in as the account's root user?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Create an IAM user that has administrator permissions",
+        "explanation": "An IAM principal with IAM permissions can create other users; root is not needed."
+      },
+      {
+        "key": "B",
+        "text": "Change the alternate contacts on the account",
+        "explanation": "Account name, contact information and alternate contacts can be changed without root credentials."
+      },
+      {
+        "key": "C",
+        "text": "Close the AWS account"
+      },
+      {
+        "key": "D",
+        "text": "Create a monthly cost budget in AWS Budgets",
+        "explanation": "Budgets can be created by any principal with the right Billing permissions."
+      }
+    ],
+    "explanation": "A few tasks can only be done as the root user, such as closing a standalone account, changing the root email address or password, and restoring IAM permissions if the only administrator locks themself out. Creating users, editing alternate contacts and creating budgets can be done by IAM principals with the right permissions. Read more: https://docs.aws.amazon.com/IAM/latest/UserGuide/root-user-tasks.html",
+    "source": "original",
+    "sourceRef": "https://docs.aws.amazon.com/IAM/latest/UserGuide/root-user-tasks.html",
+    "reviewStatus": "draft",
+    "tags": [
+      "clf-c02",
+      "domain-2",
+      "task-2.3",
+      "hard"
+    ],
+    "correctKey": "C"
+  },
+  {
+    "id": "aws-clf-hard-d2-17",
+    "categoryKey": "security",
+    "conceptId": "iam-basics",
+    "level": "hard",
+    "difficulty": 4,
+    "prompt": "An application reads a database password from a plain-text file on its server. The security team wants the password stored securely and rotated automatically on a schedule.\n\nWhich service should the team use?",
+    "options": [
+      {
+        "key": "A",
+        "text": "AWS Secrets Manager"
+      },
+      {
+        "key": "B",
+        "text": "AWS Key Management Service (AWS KMS)",
+        "explanation": "AWS KMS creates and manages encryption keys; it does not store application passwords or rotate them."
+      },
+      {
+        "key": "C",
+        "text": "An IAM password policy",
+        "explanation": "A password policy sets rules for IAM users' console passwords, not for application database credentials."
+      },
+      {
+        "key": "D",
+        "text": "AWS Certificate Manager",
+        "explanation": "Certificate Manager provisions and renews TLS certificates, not database passwords."
+      }
+    ],
+    "explanation": "Secrets Manager stores secrets such as database credentials encrypted, lets applications retrieve them with an API call, and can rotate them automatically. KMS manages keys, IAM password policies govern IAM user passwords, and ACM manages certificates. Read more: https://docs.aws.amazon.com/secretsmanager/latest/userguide/intro.html",
+    "source": "original",
+    "sourceRef": "https://docs.aws.amazon.com/secretsmanager/latest/userguide/intro.html",
+    "reviewStatus": "draft",
+    "tags": [
+      "clf-c02",
+      "domain-2",
+      "task-2.3",
+      "hard"
+    ],
+    "correctKey": "A"
+  },
+  {
+    "id": "aws-clf-veryhard-d2-18",
+    "categoryKey": "security",
+    "conceptId": "iam-basics",
+    "level": "veryhard",
+    "difficulty": 5,
+    "prompt": "A company has 40 AWS accounts in AWS Organizations. Employees should sign in with their existing corporate identity provider credentials and get access only to the accounts assigned to them.\n\nWhich solution meets these requirements?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Create an IAM user for each employee in every account with a strong password policy",
+        "explanation": "This creates many separate long-term identities instead of using the corporate credentials."
+      },
+      {
+        "key": "B",
+        "text": "Create an Amazon Cognito user pool that federates with the corporate identity provider",
+        "explanation": "Cognito handles sign-in for customers of the company's own applications, not workforce access to AWS accounts."
+      },
+      {
+        "key": "C",
+        "text": "Use service control policies to grant each employee access to the accounts they need",
+        "explanation": "SCPs only limit the maximum permissions in accounts; they never grant access or sign anyone in."
+      },
+      {
+        "key": "D",
+        "text": "Connect AWS IAM Identity Center to the identity provider and assign permission sets"
+      }
+    ],
+    "explanation": "IAM Identity Center provides workforce single sign-on across the accounts in an organization; connected to an external identity provider, it federates existing corporate identities and grants access through permission sets assigned per account. IAM users duplicate identities, Cognito is for application users, and SCPs only restrict permissions. Read more: https://docs.aws.amazon.com/singlesignon/latest/userguide/what-is.html",
+    "source": "original",
+    "sourceRef": "https://docs.aws.amazon.com/singlesignon/latest/userguide/what-is.html",
+    "reviewStatus": "draft",
+    "tags": [
+      "clf-c02",
+      "domain-2",
+      "task-2.3",
+      "veryhard"
+    ],
+    "correctKey": "D"
+  },
+  {
+    "id": "aws-clf-easy-d2-19",
+    "categoryKey": "security",
+    "conceptId": "network-protection",
+    "level": "easy",
+    "difficulty": 2,
+    "prompt": "Which service protects every AWS customer against common network and transport layer DDoS attacks automatically and at no additional charge?",
+    "options": [
+      {
+        "key": "A",
+        "text": "AWS Shield Advanced",
+        "explanation": "Shield Advanced adds protections and DDoS response team access for a subscription fee."
+      },
+      {
+        "key": "B",
+        "text": "AWS WAF",
+        "explanation": "AWS WAF filters web requests with rules the customer configures and is charged by use."
+      },
+      {
+        "key": "C",
+        "text": "AWS Shield Standard"
+      },
+      {
+        "key": "D",
+        "text": "Amazon GuardDuty",
+        "explanation": "GuardDuty is a paid threat detection service and does not mitigate DDoS traffic."
+      }
+    ],
+    "explanation": "Shield Standard is automatically included for all AWS customers and defends against the most common network and transport layer DDoS attacks. Shield Advanced is a paid upgrade, AWS WAF protects at the application layer with customer rules, and GuardDuty detects threats rather than mitigating DDoS. Read more: https://docs.aws.amazon.com/waf/latest/developerguide/ddos-standard-summary.html",
+    "source": "original",
+    "sourceRef": "https://docs.aws.amazon.com/waf/latest/developerguide/ddos-standard-summary.html",
+    "reviewStatus": "draft",
+    "tags": [
+      "clf-c02",
+      "domain-2",
+      "task-2.4",
+      "easy"
+    ],
+    "correctKey": "C"
+  },
+  {
+    "id": "aws-clf-hard-d2-20",
+    "categoryKey": "security",
+    "conceptId": "network-protection",
+    "level": "hard",
+    "difficulty": 4,
+    "prompt": "A web application behind an Application Load Balancer is receiving requests that attempt SQL injection.\n\nWhich service can inspect and block these requests before they reach the application?",
+    "options": [
+      {
+        "key": "A",
+        "text": "AWS Shield Standard",
+        "explanation": "Shield Standard mitigates network and transport layer DDoS attacks, not malicious application requests."
+      },
+      {
+        "key": "B",
+        "text": "AWS WAF"
+      },
+      {
+        "key": "C",
+        "text": "Network ACLs on the load balancer's subnets",
+        "explanation": "Network ACLs filter by IP address, protocol and port; they cannot inspect request content for SQL injection."
+      },
+      {
+        "key": "D",
+        "text": "Amazon Inspector",
+        "explanation": "Inspector finds vulnerabilities in workloads but does not filter incoming traffic."
+      }
+    ],
+    "explanation": "AWS WAF is a web application firewall for resources such as Application Load Balancers and CloudFront; its rules can inspect HTTP requests and block patterns such as SQL injection. Shield Standard handles lower-layer DDoS, network ACLs cannot see request content, and Inspector does not filter traffic. Read more: https://docs.aws.amazon.com/waf/latest/developerguide/waf-chapter.html",
+    "source": "original",
+    "sourceRef": "https://docs.aws.amazon.com/waf/latest/developerguide/waf-chapter.html",
+    "reviewStatus": "draft",
+    "tags": [
+      "clf-c02",
+      "domain-2",
+      "task-2.4",
+      "hard"
+    ],
+    "correctKey": "B"
+  },
+  {
+    "id": "aws-clf-easy-d3-1",
+    "categoryKey": "technology",
+    "conceptId": "deploying-on-aws",
+    "level": "easy",
+    "difficulty": 2,
+    "prompt": "A team must create identical test, staging and production environments many times a year and wants every environment built the same way from a template.\n\nWhich service should it use?",
+    "options": [
+      {
+        "key": "A",
+        "text": "The AWS Management Console",
+        "explanation": "Clicking through the console is fine for one-time tasks but is not repeatable or versioned like a template."
+      },
+      {
+        "key": "B",
+        "text": "AWS Config",
+        "explanation": "AWS Config records and evaluates resource configurations; it does not create resources."
+      },
+      {
+        "key": "C",
+        "text": "AWS CloudFormation"
+      },
+      {
+        "key": "D",
+        "text": "Amazon CloudWatch",
+        "explanation": "CloudWatch monitors resources; it does not provision them."
+      }
+    ],
+    "explanation": "CloudFormation is infrastructure as code: a template describes the resources, and each stack built from it is provisioned the same way, which suits repeatable processes. The console suits one-time operations, while Config and CloudWatch observe resources rather than create them. Read more: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html",
+    "source": "original",
+    "sourceRef": "https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html",
+    "reviewStatus": "draft",
+    "tags": [
+      "clf-c02",
+      "domain-3",
+      "task-3.1",
+      "easy"
+    ],
+    "correctKey": "C"
+  },
+  {
+    "id": "aws-clf-easy-d3-3",
+    "categoryKey": "technology",
+    "conceptId": "global-infrastructure",
+    "level": "easy",
+    "difficulty": 2,
+    "prompt": "Which statement describes an AWS Availability Zone?",
+    "options": [
+      {
+        "key": "A",
+        "text": "One or more discrete data centers with redundant power and networking in a Region"
+      },
+      {
+        "key": "B",
+        "text": "A separate geographic area of the world that contains several AWS Regions",
+        "explanation": "This reverses the relationship: a Region contains several Availability Zones."
+      },
+      {
+        "key": "C",
+        "text": "A site in a major city that caches content close to users for lower latency",
+        "explanation": "That describes an edge location used by services such as Amazon CloudFront."
+      },
+      {
+        "key": "D",
+        "text": "A single rack of servers that is reserved for one customer's workloads",
+        "explanation": "An Availability Zone is far larger than a rack and serves many customers."
+      }
+    ],
+    "explanation": "Each Region is a separate geographic area made of multiple, isolated Availability Zones, and each Availability Zone is one or more discrete data centers with redundant power, networking and connectivity. Edge locations are separate sites used to cache and deliver content. Read more: https://docs.aws.amazon.com/whitepapers/latest/aws-overview/global-infrastructure.html",
+    "source": "original",
+    "sourceRef": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/global-infrastructure.html",
+    "reviewStatus": "draft",
+    "tags": [
+      "clf-c02",
+      "domain-3",
+      "task-3.2",
+      "easy"
+    ],
+    "correctKey": "A"
+  },
+  {
+    "id": "aws-clf-veryhard-d3-5",
+    "categoryKey": "technology",
+    "conceptId": "global-infrastructure",
+    "level": "veryhard",
+    "difficulty": 5,
+    "prompt": "Which TWO are valid reasons to run a workload in more than one AWS Region rather than in multiple Availability Zones of one Region? (Select TWO.)",
+    "options": [
+      {
+        "key": "A",
+        "text": "Surviving the failure of a single data center",
+        "explanation": "Multiple Availability Zones in one Region already protect against a data center failure."
+      },
+      {
+        "key": "B",
+        "text": "Recovering if a disaster affects an entire geographic area"
+      },
+      {
+        "key": "C",
+        "text": "Removing single points of failure shared between Availability Zones",
+        "explanation": "Availability Zones are designed not to share single points of failure."
+      },
+      {
+        "key": "D",
+        "text": "Paying the same price in every location",
+        "explanation": "Prices differ between Regions, so adding Regions does not even out costs."
+      },
+      {
+        "key": "E",
+        "text": "Keeping users' data inside their own country to meet sovereignty laws"
+      }
+    ],
+    "explanation": "Multiple Availability Zones protect against data center failures because they share no single points of failure. Multiple Regions are for needs one Region cannot meet: disaster recovery from a Regional event, data sovereignty in other countries, and low latency for users far away. Prices vary by Region. Read more: https://docs.aws.amazon.com/whitepapers/latest/aws-overview/global-infrastructure.html",
+    "source": "original",
+    "sourceRef": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/global-infrastructure.html",
+    "reviewStatus": "draft",
+    "tags": [
+      "clf-c02",
+      "domain-3",
+      "task-3.2",
+      "veryhard"
+    ],
+    "correctKeys": [
+      "B",
+      "E"
+    ]
+  },
+  {
+    "id": "aws-clf-hard-d3-8",
+    "categoryKey": "technology",
+    "conceptId": "compute-options",
+    "level": "hard",
+    "difficulty": 4,
+    "prompt": "A team runs its application in containers with Amazon ECS. It wants to stop managing, patching and scaling the EC2 instances in the cluster.\n\nWhich option should it use?",
+    "options": [
+      {
+        "key": "A",
+        "text": "AWS Fargate"
+      },
+      {
+        "key": "B",
+        "text": "Amazon EKS with self-managed nodes",
+        "explanation": "Self-managed nodes are EC2 instances the team still patches and scales."
+      },
+      {
+        "key": "C",
+        "text": "Amazon EC2 Auto Scaling",
+        "explanation": "Auto Scaling adjusts the number of instances but the team still manages them."
+      },
+      {
+        "key": "D",
+        "text": "Amazon Elastic Container Registry",
+        "explanation": "Amazon ECR stores container images; it does not run containers."
+      }
+    ],
+    "explanation": "Fargate is serverless compute for containers: ECS tasks run without the team provisioning, patching or scaling EC2 instances. Self-managed EKS nodes and Auto Scaling groups still leave instances to manage, and ECR is an image registry. Read more: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/AWS_Fargate.html",
+    "source": "original",
+    "sourceRef": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/AWS_Fargate.html",
+    "reviewStatus": "draft",
+    "tags": [
+      "clf-c02",
+      "domain-3",
+      "task-3.3",
+      "hard"
+    ],
+    "correctKey": "A"
+  },
+  {
+    "id": "aws-clf-hard-d3-11",
+    "categoryKey": "technology",
+    "conceptId": "database-services",
+    "level": "hard",
+    "difficulty": 4,
+    "prompt": "A company's MySQL database needs a third-party agent installed on the database server's operating system, which the vendor requires for support.\n\nWhich option allows this?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Amazon RDS for MySQL",
+        "explanation": "Amazon RDS does not give shell access to DB instances, so agents cannot be installed on the host."
+      },
+      {
+        "key": "B",
+        "text": "Amazon Aurora MySQL-Compatible Edition",
+        "explanation": "Aurora is fully managed, with no operating system access for customers."
+      },
+      {
+        "key": "C",
+        "text": "MySQL installed on Amazon EC2"
+      },
+      {
+        "key": "D",
+        "text": "Amazon DynamoDB",
+        "explanation": "DynamoDB is a serverless NoSQL service with no server and is not MySQL."
+      }
+    ],
+    "explanation": "Managed databases such as Amazon RDS and Aurora handle patching, backups and failover but do not allow shell access to the host. When software must be installed on the database server, the company runs the database on EC2 and takes on its management. DynamoDB is not a MySQL option. Read more: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/rds-custom.html",
+    "source": "original",
+    "sourceRef": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/rds-custom.html",
+    "reviewStatus": "draft",
+    "tags": [
+      "clf-c02",
+      "domain-3",
+      "task-3.4",
+      "hard"
+    ],
+    "correctKey": "C"
+  },
+  {
+    "id": "aws-clf-veryhard-d3-16",
+    "categoryKey": "technology",
+    "conceptId": "vpc-basics",
+    "level": "veryhard",
+    "difficulty": 5,
+    "prompt": "A web server with a public IP address runs in a subnet of a new VPC but cannot be reached from the internet.\n\nWhich TWO components are needed to make it a public subnet? (Select TWO.)",
+    "options": [
+      {
+        "key": "A",
+        "text": "A NAT gateway with a route from the subnet",
+        "explanation": "A NAT gateway lets instances in private subnets start outbound connections; it does not accept inbound traffic."
+      },
+      {
+        "key": "B",
+        "text": "A gateway VPC endpoint in the route table",
+        "explanation": "A gateway endpoint gives private access to Amazon S3 or DynamoDB, not internet access."
+      },
+      {
+        "key": "C",
+        "text": "An internet gateway attached to the VPC"
+      },
+      {
+        "key": "D",
+        "text": "An AWS Direct Connect connection to the VPC",
+        "explanation": "Direct Connect links an on-premises network to AWS, not the internet to a VPC."
+      },
+      {
+        "key": "E",
+        "text": "A route to the internet gateway for 0.0.0.0/0"
+      }
+    ],
+    "explanation": "A subnet is public when its route table has a route to an internet gateway attached to the VPC; with a public IP address, the instance can then be reached (subject to security groups and network ACLs). NAT gateways serve private subnets' outbound traffic, gateway endpoints reach S3 or DynamoDB, and Direct Connect links on-premises networks. Read more: https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Internet_Gateway.html",
+    "source": "original",
+    "sourceRef": "https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Internet_Gateway.html",
+    "reviewStatus": "draft",
+    "tags": [
+      "clf-c02",
+      "domain-3",
+      "task-3.5",
+      "veryhard"
+    ],
+    "correctKeys": [
+      "C",
+      "E"
+    ]
+  },
+  {
+    "id": "aws-clf-easy-d3-17",
+    "categoryKey": "technology",
+    "conceptId": "storage-services",
+    "level": "easy",
+    "difficulty": 2,
+    "prompt": "A company needs to store millions of photos and videos, serve them over HTTPS, and pay only for the storage it uses.\n\nWhich service should it use?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Amazon EBS",
+        "explanation": "EBS volumes are block storage attached to EC2 instances, with capacity provisioned in advance."
+      },
+      {
+        "key": "B",
+        "text": "Amazon S3"
+      },
+      {
+        "key": "C",
+        "text": "Amazon EFS",
+        "explanation": "EFS is a shared file system mounted by servers, not object storage served over HTTPS."
+      },
+      {
+        "key": "D",
+        "text": "EC2 instance store",
+        "explanation": "Instance store is temporary block storage that is lost when the instance stops."
+      }
+    ],
+    "explanation": "Amazon S3 is object storage: it stores any number of objects, makes them accessible through HTTPS requests, scales automatically and charges for what is stored. EBS and instance store are block storage for instances, and EFS is a file system. Read more: https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html",
+    "source": "original",
+    "sourceRef": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html",
+    "reviewStatus": "draft",
+    "tags": [
+      "clf-c02",
+      "domain-3",
+      "task-3.6",
+      "easy"
+    ],
+    "correctKey": "B"
+  },
+  {
+    "id": "aws-clf-hard-d3-19",
+    "categoryKey": "technology",
+    "conceptId": "s3-storage-classes",
+    "level": "hard",
+    "difficulty": 4,
+    "prompt": "Application logs in Amazon S3 are read often for 30 days, then rarely, and must be deleted after one year. The team wants this handled automatically.\n\nWhat should it configure?",
+    "options": [
+      {
+        "key": "A",
+        "text": "S3 Intelligent-Tiering on the bucket so that logs move to cheaper access tiers when reads drop",
+        "explanation": "Intelligent-Tiering moves objects between tiers by access, but it never deletes them after a year."
+      },
+      {
+        "key": "B",
+        "text": "S3 Versioning on the bucket so that older copies of each log are retained for a full year",
+        "explanation": "Versioning keeps previous versions of objects; it neither moves logs to cheaper classes nor deletes them."
+      },
+      {
+        "key": "C",
+        "text": "An AWS Backup plan that copies the logs each day and keeps every backup for one year",
+        "explanation": "AWS Backup protects data with copies; it would add storage rather than tier and delete the logs."
+      },
+      {
+        "key": "D",
+        "text": "An S3 Lifecycle rule that moves logs to S3 Standard-IA at 30 days and expires them at 365 days"
+      }
+    ],
+    "explanation": "S3 Lifecycle rules apply transition actions (move objects to another storage class after a set time) and expiration actions (delete them after a set time). Intelligent-Tiering does not delete, Versioning keeps more data, and AWS Backup makes copies. Read more: https://docs.aws.amazon.com/AmazonS3/latest/userguide/object-lifecycle-mgmt.html",
+    "source": "original",
+    "sourceRef": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/object-lifecycle-mgmt.html",
+    "reviewStatus": "draft",
+    "tags": [
+      "clf-c02",
+      "domain-3",
+      "task-3.6",
+      "hard"
+    ],
+    "correctKey": "D"
+  },
+  {
+    "id": "aws-clf-hard-d3-24",
+    "categoryKey": "technology",
+    "conceptId": "analytics-and-ml",
+    "level": "hard",
+    "difficulty": 4,
+    "prompt": "Analysts want to run standard SQL queries directly on log files stored in Amazon S3, without loading the data anywhere or managing servers, and pay per query.\n\nWhich service should they use?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Amazon Redshift",
+        "explanation": "Redshift is a data warehouse; data is usually loaded into it and it is sized as a cluster or workgroup."
+      },
+      {
+        "key": "B",
+        "text": "AWS Glue",
+        "explanation": "Glue discovers, catalogs and transforms data, but analysts query it with a service such as Athena."
+      },
+      {
+        "key": "C",
+        "text": "Amazon Athena"
+      },
+      {
+        "key": "D",
+        "text": "Amazon Kinesis Data Streams",
+        "explanation": "Kinesis Data Streams ingests streaming data in real time; it does not run SQL over files in S3."
+      }
+    ],
+    "explanation": "Athena is a serverless, interactive query service that analyzes data in Amazon S3 with standard SQL and charges for the data scanned. Redshift is a warehouse, Glue prepares and catalogs data, and Kinesis ingests streams. Read more: https://docs.aws.amazon.com/athena/latest/ug/what-is.html",
+    "source": "original",
+    "sourceRef": "https://docs.aws.amazon.com/athena/latest/ug/what-is.html",
+    "reviewStatus": "draft",
+    "tags": [
+      "clf-c02",
+      "domain-3",
+      "task-3.7",
+      "hard"
+    ],
+    "correctKey": "C"
+  },
+  {
+    "id": "aws-clf-hard-d3-27",
+    "categoryKey": "technology",
+    "conceptId": "app-integration",
+    "level": "hard",
+    "difficulty": 4,
+    "prompt": "An order service hands work to a separate processing service. If the processing service is down or slow, orders must wait safely until it can pull and handle them.\n\nWhich service should connect the two?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Amazon SQS"
+      },
+      {
+        "key": "B",
+        "text": "Amazon SNS",
+        "explanation": "SNS pushes each message to subscribers immediately; it does not keep a backlog for a consumer to pull later."
+      },
+      {
+        "key": "C",
+        "text": "Amazon EventBridge",
+        "explanation": "EventBridge routes events to targets by rules; it is not a queue that a consumer pulls from at its own pace."
+      },
+      {
+        "key": "D",
+        "text": "Amazon SES",
+        "explanation": "SES sends and receives email, not messages between application components."
+      }
+    ],
+    "explanation": "SQS is a managed message queue that decouples components: producers send messages, and messages are stored until a consumer receives and deletes them, so a slow or failed consumer does not lose work. SNS and EventBridge push messages to targets, and SES is email. Read more: https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/welcome.html",
+    "source": "original",
+    "sourceRef": "https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/welcome.html",
+    "reviewStatus": "draft",
+    "tags": [
+      "clf-c02",
+      "domain-3",
+      "task-3.8",
+      "hard"
+    ],
+    "correctKey": "A"
+  },
+  {
+    "id": "aws-clf-easy-d4-1",
+    "categoryKey": "billing",
+    "conceptId": "ec2-pricing-models",
+    "level": "easy",
+    "difficulty": 2,
+    "prompt": "A company runs image-rendering batch jobs that can stop and restart at any time without losing work. It wants the lowest possible compute price.\n\nWhich Amazon EC2 purchasing option should it use?",
+    "options": [
+      {
+        "key": "A",
+        "text": "On-Demand Instances",
+        "explanation": "On-Demand is never interrupted but costs the most per hour."
+      },
+      {
+        "key": "B",
+        "text": "Reserved Instances",
+        "explanation": "Reserved Instances discount steady usage over a one- or three-year term, not interruptible bursts."
+      },
+      {
+        "key": "C",
+        "text": "Dedicated Hosts",
+        "explanation": "Dedicated Hosts are physical servers for licensing or compliance needs and cost more, not less."
+      },
+      {
+        "key": "D",
+        "text": "Spot Instances"
+      }
+    ],
+    "explanation": "Spot Instances use spare EC2 capacity at steep discounts compared with On-Demand prices, and AWS can reclaim them with a two-minute warning, which suits flexible, fault-tolerant work such as batch jobs. On-Demand costs more, Reserved Instances need a steady commitment, and Dedicated Hosts serve licensing needs. Read more: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-spot-instances.html",
+    "source": "original",
+    "sourceRef": "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-spot-instances.html",
+    "reviewStatus": "draft",
+    "tags": [
+      "clf-c02",
+      "domain-4",
+      "task-4.1",
+      "easy"
+    ],
+    "correctKey": "D"
+  },
+  {
+    "id": "aws-clf-hard-d4-5",
+    "categoryKey": "billing",
+    "conceptId": "cost-management-tools",
+    "level": "hard",
+    "difficulty": 4,
+    "prompt": "A company tags its resources with a project key. It wants to see costs grouped by project in AWS Cost Explorer and in the AWS Cost and Usage Report.\n\nWhat must it do?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Create a separate AWS account for each project in the organization",
+        "explanation": "Separate accounts can split costs, but they are not needed to report costs by an existing tag."
+      },
+      {
+        "key": "B",
+        "text": "Turn on AWS Config rules that require every resource to have the project tag",
+        "explanation": "Config rules can enforce tagging but do not make tags appear in billing reports."
+      },
+      {
+        "key": "C",
+        "text": "Create an AWS Budgets budget for each project with the tag as a filter",
+        "explanation": "Budgets track amounts against thresholds; they do not make a tag available as a reporting dimension."
+      },
+      {
+        "key": "D",
+        "text": "Activate the project tag as a user-defined cost allocation tag"
+      }
+    ],
+    "explanation": "Tags only show up in Cost Explorer and the Cost and Usage Report after they are activated as cost allocation tags in the Billing console; costs can then be grouped by them. Separate accounts, Config rules and budgets do not activate tags for billing. Read more: https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/cost-alloc-tags.html",
+    "source": "original",
+    "sourceRef": "https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/cost-alloc-tags.html",
+    "reviewStatus": "draft",
+    "tags": [
+      "clf-c02",
+      "domain-4",
+      "task-4.2",
+      "hard"
+    ],
+    "correctKey": "D"
+  },
+  {
+    "id": "aws-clf-hard-d4-7",
+    "categoryKey": "billing",
+    "conceptId": "support-plans",
+    "level": "hard",
+    "difficulty": 4,
+    "prompt": "A small company is launching its first production workload. It wants 24/7 access to AWS support engineers by phone, chat and email at the lowest plan level that AWS recommends for production.\n\nWhich AWS Support plan should it choose?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Basic Support",
+        "explanation": "Basic Support includes customer service, documentation and re:Post, but not technical support cases with engineers."
+      },
+      {
+        "key": "B",
+        "text": "Enterprise Support",
+        "explanation": "Enterprise Support adds a designated Technical Account Manager and costs more than the minimum for production."
+      },
+      {
+        "key": "C",
+        "text": "Business Support+"
+      },
+      {
+        "key": "D",
+        "text": "Unified Operations",
+        "explanation": "Unified Operations is for mission-critical workloads that need the fastest response and costs the most."
+      }
+    ],
+    "explanation": "AWS describes Business Support+ as the minimum recommended plan for production workloads; it includes 24/7 technical support by phone, web, chat and email and the full set of Trusted Advisor checks. Basic Support has no technical cases, while Enterprise Support and Unified Operations add more and cost more. Read more: https://aws.amazon.com/premiumsupport/plans/",
+    "source": "original",
+    "sourceRef": "https://aws.amazon.com/premiumsupport/plans/",
+    "reviewStatus": "draft",
+    "tags": [
+      "clf-c02",
+      "domain-4",
+      "task-4.3",
+      "hard"
+    ],
+    "correctKey": "C"
+  },
+  {
+    "id": "aws-clf-veryhard-d4-9",
+    "categoryKey": "billing",
+    "conceptId": "support-plans",
+    "level": "veryhard",
+    "difficulty": 5,
+    "prompt": "A company notices that an IP address belonging to Amazon EC2 is repeatedly trying to log in to its own servers, which are hosted outside AWS.\n\nWho should the company report this to?",
+    "options": [
+      {
+        "key": "A",
+        "text": "The AWS Trust and Safety team"
+      },
+      {
+        "key": "B",
+        "text": "AWS Support, through a technical support case",
+        "explanation": "Support cases are for help with your own account; abuse from other AWS resources goes to Trust and Safety."
+      },
+      {
+        "key": "C",
+        "text": "The AWS Health Dashboard",
+        "explanation": "The Health Dashboard shows events affecting AWS services and your resources; it does not take abuse reports."
+      },
+      {
+        "key": "D",
+        "text": "Amazon GuardDuty",
+        "explanation": "GuardDuty monitors your own AWS accounts and cannot act on another customer's resources."
+      }
+    ],
+    "explanation": "Suspected abuse from AWS resources, such as brute-force attempts, spam or malware hosting, is reported to the AWS Trust and Safety team through the abuse report form. Support cases, the Health Dashboard and GuardDuty all deal with the reporter's own account. Read more: https://repost.aws/knowledge-center/report-aws-abuse",
+    "source": "original",
+    "sourceRef": "https://repost.aws/knowledge-center/report-aws-abuse",
+    "reviewStatus": "draft",
+    "tags": [
+      "clf-c02",
+      "domain-4",
+      "task-4.3",
+      "veryhard"
+    ],
+    "correctKey": "A"
+  }
+]
