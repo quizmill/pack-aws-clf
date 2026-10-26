@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 2,
+  "id": "aws-clf",
+  "title": "AWS Cloud Practitioner",
+  "description": "Practice for the AWS Certified Cloud Practitioner (CLF-C02) exam - cloud concepts, security and compliance, core AWS services, and billing, pricing and support.",
+  "homeSubtitle": "Grind toward CLF-C02.",
+  "themeColor": "#ff9900",
+  "categories": [
+    {
+      "key": "cloud-concepts",
+      "label": "Cloud Concepts",
+      "shortLabel": "Concepts",
+      "icon": "☁️",
+      "weight": 0.24
+    },
+    {
+      "key": "security",
+      "label": "Security and Compliance",
+      "shortLabel": "Security",
+      "icon": "🔐",
+      "weight": 0.3
+    },
+    {
+      "key": "technology",
+      "label": "Cloud Technology and Services",
+      "shortLabel": "Technology",
+      "icon": "🧰",
+      "weight": 0.34
+    },
+    {
+      "key": "billing",
+      "label": "Billing, Pricing, and Support",
+      "shortLabel": "Billing",
+      "icon": "💰",
+      "weight": 0.12
+    }
+  ],
+  "levelsLabel": "Tier",
+  "levels": [
+    {
+      "key": "easy",
+      "label": "Easy"
+    },
+    {
+      "key": "hard",
+      "label": "Hard"
+    },
+    {
+      "key": "veryhard",
+      "label": "Very hard"
+    }
+  ],
+  "exam": {
+    "label": "CLF-C02 exam",
+    "passPct": 70,
+    "scaled": true,
+    "questionCount": 65,
+    "durationMinutes": 90
+  },
+  "games": {},
+  "sources": [
+    {
+      "label": "Original",
+      "name": "quizmill exam-style questions",
+      "blurb": "Questions written for this pack in the official exam's style, each grounded in the public AWS documentation page named in its sourceRef.",
+      "url": "https://github.com/quizmill/pack-aws-clf"
+    },
+    {
+      "label": "AWS",
+      "name": "CLF-C02 exam guide",
+      "blurb": "Domains, weights and task statements follow the official AWS Certified Cloud Practitioner (CLF-C02) exam guide.",
+      "url": "https://docs.aws.amazon.com/aws-certification/latest/cloud-practitioner-02/cloud-practitioner-02.html"
+    }
+  ]
+}

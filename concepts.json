@@ -1,0 +1,292 @@
+[
+  {
+    "id": "cloud-benefits",
+    "title": "Advantages of cloud computing",
+    "body": "AWS describes six advantages of cloud computing:\n\n- Trade fixed expense for variable expense: pay only for what you use.\n- Benefit from massive economies of scale: aggregate usage lowers prices.\n- Stop guessing capacity: scale up and down with demand (elasticity).\n- Increase speed and agility: resources in minutes, so experiments are cheap.\n- Stop spending money running and maintaining data centers.\n- Go global in minutes: deploy in Regions around the world.\n\nRead more: https://docs.aws.amazon.com/whitepapers/latest/aws-overview/six-advantages-of-cloud-computing.html",
+    "commonMistakes": [
+      "Confusing elasticity (capacity follows demand) with high availability (surviving failures).",
+      "Thinking economies of scale means the customer's bill is fixed; it means AWS's unit prices fall."
+    ],
+    "tags": [
+      "domain-1",
+      "task-1.1"
+    ]
+  },
+  {
+    "id": "well-architected",
+    "title": "AWS Well-Architected Framework pillars",
+    "body": "Six pillars, each with its own design principles:\n\n- Operational excellence: safely automate, make frequent small reversible changes, anticipate failure, learn from operational events.\n- Security: strong identity foundation, traceability, security at all layers, protect data in transit and at rest.\n- Reliability: perform the intended function correctly and consistently; automatically recover, scale horizontally, stop guessing capacity.\n- Performance efficiency: democratize advanced technologies, go global in minutes, use serverless, experiment more often.\n- Cost optimization: cloud financial management, consumption model, measure overall efficiency, analyze and attribute expenditure.\n- Sustainability: minimize environmental impact, maximize utilization.\n\nRead more: https://docs.aws.amazon.com/wellarchitected/latest/framework/the-pillars-of-the-framework.html",
+    "commonMistakes": [
+      "Mixing up reliability (recover and keep working) and performance efficiency (use resources efficiently).",
+      "Forgetting sustainability is the sixth pillar."
+    ],
+    "tags": [
+      "domain-1",
+      "task-1.2"
+    ]
+  },
+  {
+    "id": "cloud-adoption",
+    "title": "Cloud adoption and migration strategies",
+    "body": "The AWS Cloud Adoption Framework (AWS CAF) organizes guidance into six perspectives: Business, People, Governance, Platform, Security and Operations. Its business outcomes are reduced business risk, improved ESG performance, increased revenue and increased operational efficiency.\n\nMigration strategies (the 7 Rs) include:\n\n- Rehost (lift and shift): move as-is.\n- Replatform (lift, tinker, and shift): small optimizations such as a managed database.\n- Refactor: re-architect for cloud-native features.\n- Repurchase, Relocate, Retain and Retire.\n\nAWS DMS migrates databases with ongoing replication, so the source stays in use until cutover.\n\nRead more: https://docs.aws.amazon.com/prescriptive-guidance/latest/large-migration-guide/migration-strategies.html",
+    "commonMistakes": [
+      "Calling a move to Amazon RDS a rehost: changing the database platform is replatforming.",
+      "Mixing up the People perspective (culture, skills) with Governance (risk, cost, benefits)."
+    ],
+    "tags": [
+      "domain-1",
+      "task-1.3"
+    ]
+  },
+  {
+    "id": "cloud-economics",
+    "title": "Cloud economics",
+    "body": "On premises a company pays up front for hardware, facilities, power and cooling, sized for peak. In the cloud those become variable, usage-based costs.\n\n- Rightsizing: match instance types and sizes to actual use, before committing to discounts.\n- Licensing: license-included pricing, or Bring Your Own License (BYOL); per-socket or per-core licenses need Dedicated Hosts.\n- Automation reduces manual effort and errors.\n- The customer still pays for software it brings and still patches guest operating systems on EC2.\n\nRead more: https://docs.aws.amazon.com/whitepapers/latest/cost-optimization-right-sizing/cost-optimization-right-sizing.html",
+    "commonMistakes": [
+      "Buying Reserved Instances for oversized instances, which locks in the waste.",
+      "Assuming all on-premises operational work disappears; the customer keeps OS and application tasks on EC2."
+    ],
+    "tags": [
+      "domain-1",
+      "task-1.4"
+    ]
+  },
+  {
+    "id": "shared-responsibility",
+    "title": "AWS shared responsibility model",
+    "body": "AWS is responsible for security OF the cloud: facilities, hardware, the hypervisor and the global network. The customer is responsible for security IN the cloud: data, identities, configuration and, on EC2, the guest operating system and applications.\n\n- The split shifts with the service: on EC2 the customer patches the OS; on Amazon RDS AWS patches the OS and database engine; on Lambda AWS runs the whole platform and the customer owns code and permissions.\n- Inherited controls: physical and environmental.\n- Shared controls: patch management, configuration management, awareness and training.\n- Customer-specific: for example zone security.\n\nRead more: https://aws.amazon.com/compliance/shared-responsibility-model/",
+    "commonMistakes": [
+      "Thinking AWS patches the guest OS on EC2.",
+      "Thinking the customer stops being responsible for data and access on managed services."
+    ],
+    "tags": [
+      "domain-2",
+      "task-2.1"
+    ]
+  },
+  {
+    "id": "compliance-and-auditing",
+    "title": "Compliance, auditing and logging",
+    "body": "- AWS Artifact: download AWS's compliance reports (SOC, PCI, ISO) and agreements.\n- AWS CloudTrail: records API calls - who did what, when, from where.\n- AWS Config: records resource configuration over time and evaluates it with rules.\n- Amazon CloudWatch: metrics, logs and alarms.\n- Services in Scope by Compliance Program: which AWS services each program covers; coverage varies by service.\n\nRead more: https://docs.aws.amazon.com/artifact/latest/ug/what-is-aws-artifact.html",
+    "commonMistakes": [
+      "Using CloudWatch to find out who made a change; that is CloudTrail.",
+      "Using CloudTrail for a resource's configuration history; that is AWS Config."
+    ],
+    "tags": [
+      "domain-2",
+      "task-2.2"
+    ]
+  },
+  {
+    "id": "security-services",
+    "title": "AWS security services",
+    "body": "- Amazon GuardDuty: threat detection from logs such as CloudTrail, VPC Flow Logs and DNS.\n- Amazon Inspector: automated vulnerability scanning of EC2, container images and Lambda.\n- AWS Security Hub: aggregates findings and checks accounts against standards.\n- Amazon Macie: finds sensitive data in Amazon S3.\n- AWS Trusted Advisor: best-practice checks, including security.\n- Encryption: at rest with AWS KMS keys (EBS, S3, RDS); in transit with TLS and ACM certificates.\n- AWS Marketplace sells third-party security products billed through AWS.\n\nRead more: https://docs.aws.amazon.com/securityhub/latest/userguide/what-is-securityhub.html",
+    "commonMistakes": [
+      "Mixing up GuardDuty (threats) and Inspector (vulnerabilities).",
+      "Treating TLS as encryption at rest."
+    ],
+    "tags": [
+      "domain-2",
+      "task-2.2",
+      "task-2.4"
+    ]
+  },
+  {
+    "id": "iam-basics",
+    "title": "IAM basics and least privilege",
+    "body": "- IAM users, groups, roles and policies; grant only the permissions needed (least privilege).\n- Groups apply one policy to many users; AWS managed policies are broad, customer managed policies can be scoped.\n- Roles give temporary credentials, including cross-account access.\n- IAM Identity Center gives workforce single sign-on across accounts, with federation to an external identity provider.\n- Store application secrets in AWS Secrets Manager (automatic rotation) or Systems Manager Parameter Store.\n- Turn on MFA.\n\nRead more: https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html",
+    "commonMistakes": [
+      "Sharing one IAM user between people.",
+      "Expecting SCPs to grant permissions; they only limit them.",
+      "Using Amazon Cognito for employee access to AWS accounts; it is for application users."
+    ],
+    "tags": [
+      "domain-2",
+      "task-2.3"
+    ]
+  },
+  {
+    "id": "root-user",
+    "title": "Protecting the root user",
+    "body": "The root user has complete access to the account. Protect it with MFA, create no access keys for it, and use it only for tasks that require it, such as:\n\n- closing a standalone account,\n- changing the root email address or password,\n- restoring IAM permissions when the only administrator is locked out.\n\nIn AWS Organizations, root access for member accounts can be managed centrally.\n\nRead more: https://docs.aws.amazon.com/IAM/latest/UserGuide/root-user-tasks.html",
+    "commonMistakes": [
+      "Thinking contact details or budgets need the root user.",
+      "Creating root access keys for automation."
+    ],
+    "tags": [
+      "domain-2",
+      "task-2.3"
+    ]
+  },
+  {
+    "id": "network-protection",
+    "title": "Shield, WAF and Firewall Manager",
+    "body": "- AWS Shield Standard: automatic protection against common network and transport layer DDoS attacks, at no extra charge.\n- AWS Shield Advanced: paid, extra protection and DDoS response support.\n- AWS WAF: web application firewall; rules inspect HTTP requests (SQL injection, cross-site scripting, IP sets) for CloudFront, ALB, API Gateway.\n- AWS Firewall Manager: centrally applies WAF and other firewall rules across accounts in an organization.\n\nRead more: https://docs.aws.amazon.com/waf/latest/developerguide/what-is-aws-waf.html",
+    "commonMistakes": [
+      "Expecting network ACLs to block SQL injection; they cannot see request content.",
+      "Thinking Shield Standard must be bought."
+    ],
+    "tags": [
+      "domain-2",
+      "task-2.4"
+    ]
+  },
+  {
+    "id": "deploying-on-aws",
+    "title": "Ways to deploy and operate on AWS",
+    "body": "- AWS Management Console: interactive, good for one-time tasks.\n- AWS CLI and SDKs: programmatic access through APIs.\n- Infrastructure as code (AWS CloudFormation): templates create repeatable, versioned environments.\n\nDeployment models: cloud (all in the cloud), hybrid (cloud connected to on-premises), and on-premises (private cloud).\n\nRead more: https://docs.aws.amazon.com/whitepapers/latest/aws-overview/types-of-cloud-computing.html",
+    "commonMistakes": [
+      "Using the console for something that must be repeated identically many times.",
+      "Calling a multi-Region design a hybrid deployment."
+    ],
+    "tags": [
+      "domain-3",
+      "task-3.1"
+    ]
+  },
+  {
+    "id": "global-infrastructure",
+    "title": "Regions, Availability Zones and edge locations",
+    "body": "- Region: a separate geographic area with multiple, isolated Availability Zones.\n- Availability Zone: one or more discrete data centers with redundant power, networking and connectivity; AZs do not share single points of failure.\n- Edge locations: sites that cache and deliver content (CloudFront) close to users.\n\nUse multiple AZs for high availability; use multiple Regions for disaster recovery, data sovereignty and low latency for distant users. Services and prices vary by Region.\n\nRead more: https://docs.aws.amazon.com/whitepapers/latest/aws-overview/global-infrastructure.html",
+    "commonMistakes": [
+      "Choosing multiple Regions just to survive a data center failure; multiple AZs already do that.",
+      "Confusing edge locations with Availability Zones."
+    ],
+    "tags": [
+      "domain-3",
+      "task-3.2",
+      "task-1.1"
+    ]
+  },
+  {
+    "id": "compute-options",
+    "title": "Compute on AWS",
+    "body": "- Amazon EC2: virtual servers; families include general purpose, compute optimized, memory optimized, storage optimized and accelerated computing.\n- Containers: Amazon ECS, Amazon EKS (Kubernetes); AWS Fargate runs containers without managing servers.\n- AWS Lambda: run code on events, pay for compute time used.\n- EC2 Auto Scaling adds and removes instances (elasticity); Elastic Load Balancing spreads traffic across healthy targets.\n\nRead more: https://docs.aws.amazon.com/ec2/latest/instancetypes/instance-types.html",
+    "commonMistakes": [
+      "Choosing memory optimized for CPU-bound batch work.",
+      "Thinking Fargate is a separate orchestrator; it is serverless compute for ECS and EKS."
+    ],
+    "tags": [
+      "domain-3",
+      "task-3.3"
+    ]
+  },
+  {
+    "id": "database-services",
+    "title": "Database services",
+    "body": "- Relational: Amazon RDS and Amazon Aurora - AWS handles patching, backups and failover, with no OS access.\n- NoSQL: Amazon DynamoDB - serverless key-value and document, single-digit milliseconds.\n- In-memory: Amazon ElastiCache - microsecond caching.\n- Data warehouse: Amazon Redshift.\n- Self-managed on EC2 when you need OS access or unsupported software.\n- Migration: AWS DMS moves data (with ongoing replication); AWS SCT converts schemas between engines.\n\nRead more: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html",
+    "commonMistakes": [
+      "Choosing a read replica when the requirement says in-memory.",
+      "Expecting shell access on Amazon RDS."
+    ],
+    "tags": [
+      "domain-3",
+      "task-3.4"
+    ]
+  },
+  {
+    "id": "vpc-basics",
+    "title": "VPC and network services",
+    "body": "- A subnet is public when its route table sends 0.0.0.0/0 to an internet gateway attached to the VPC; NAT gateways give private subnets outbound access.\n- Security groups: stateful, allow rules only, attached to resources.\n- Network ACLs: stateless, allow and deny rules, at the subnet level, evaluated in order.\n- Amazon Route 53: DNS and domain registration.\n- AWS Site-to-Site VPN (over the internet, encrypted) and AWS Direct Connect (dedicated private connection).\n\nRead more: https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html",
+    "commonMistakes": [
+      "Swapping security group and network ACL properties.",
+      "Expecting a VPN to give consistent performance; it runs over the internet."
+    ],
+    "tags": [
+      "domain-3",
+      "task-3.5"
+    ]
+  },
+  {
+    "id": "storage-services",
+    "title": "Storage services",
+    "body": "- Object: Amazon S3 - any amount of data over HTTPS.\n- Block: Amazon EBS (persistent volumes in one AZ) and instance store (temporary, lost on stop).\n- File: Amazon EFS (NFS, many Linux instances across AZs) and Amazon FSx (Windows File Server, Lustre and more).\n- Hybrid cached: AWS Storage Gateway, e.g. an S3 File Gateway with a local cache.\n- AWS Backup: central backup plans across EBS, RDS, DynamoDB, EFS and more.\n\nRead more: https://docs.aws.amazon.com/whitepapers/latest/aws-overview/storage-services.html",
+    "commonMistakes": [
+      "Sharing one EBS volume between many instances across AZs.",
+      "Using DataSync when the requirement is ongoing local access to cached files."
+    ],
+    "tags": [
+      "domain-3",
+      "task-3.6"
+    ]
+  },
+  {
+    "id": "s3-storage-classes",
+    "title": "Amazon S3 storage classes and lifecycle",
+    "body": "- S3 Standard: frequent access.\n- S3 Intelligent-Tiering: moves objects between tiers by access pattern.\n- S3 Standard-IA and One Zone-IA: infrequent access, millisecond retrieval, per-GB retrieval fee.\n- S3 Glacier Instant Retrieval (ms), Flexible Retrieval (minutes to 12 hours) and Deep Archive (lowest cost, within 12 hours, 48 hours bulk).\n\nS3 Lifecycle rules transition objects to cheaper classes and expire (delete) them on a schedule.\n\nRead more: https://docs.aws.amazon.com/AmazonS3/latest/userguide/storage-class-intro.html",
+    "commonMistakes": [
+      "Expecting Intelligent-Tiering to delete old objects.",
+      "Choosing Glacier Instant Retrieval when hours of wait are fine and cost matters most."
+    ],
+    "tags": [
+      "domain-3",
+      "task-3.6",
+      "task-4.1"
+    ]
+  },
+  {
+    "id": "analytics-and-ml",
+    "title": "Analytics and AI/ML services",
+    "body": "- Amazon Athena: SQL over data in S3, serverless, pay per query.\n- Amazon Kinesis: real-time streaming data.\n- AWS Glue: data catalog and ETL.\n- Amazon Quick Sight: business intelligence dashboards.\n- Amazon Redshift: data warehouse.\n- Amazon SageMaker AI: build, train and deploy ML models.\n- Amazon Lex (chatbots), Polly (text to speech), Transcribe (speech to text), Comprehend (text insights), Textract (documents).\n\nRead more: https://docs.aws.amazon.com/athena/latest/ug/what-is.html",
+    "commonMistakes": [
+      "Choosing Glue to run ad hoc SQL; Athena queries, Glue prepares and catalogs.",
+      "Mixing up Lex (conversations) and Polly (speech output)."
+    ],
+    "tags": [
+      "domain-3",
+      "task-3.7"
+    ]
+  },
+  {
+    "id": "app-integration",
+    "title": "Messaging, business apps, developer tools and end-user computing",
+    "body": "- Amazon SNS: publish/subscribe push to email, SMS, endpoints.\n- Amazon SQS: queue that holds messages until a consumer processes them.\n- Amazon EventBridge: event bus that routes events by rules.\n- Amazon SES: email; Amazon Connect: cloud contact center.\n- AWS CodeBuild (build and test), CodePipeline (release orchestration), X-Ray (request tracing).\n- Amazon WorkSpaces (virtual desktops), AppStream 2.0 (streamed apps), WorkSpaces Secure Browser.\n- AWS Amplify (web and mobile frontends), AWS IoT Core (connect IoT devices).\n\nRead more: https://docs.aws.amazon.com/sns/latest/dg/welcome.html",
+    "commonMistakes": [
+      "Using SNS to buffer work for a slow consumer; that is SQS.",
+      "Using CloudTrail to trace application requests; that is X-Ray."
+    ],
+    "tags": [
+      "domain-3",
+      "task-3.8"
+    ]
+  },
+  {
+    "id": "ec2-pricing-models",
+    "title": "Compute purchasing options",
+    "body": "- On-Demand: no commitment, highest rate.\n- Savings Plans: commit to $/hour for 1 or 3 years; Compute Savings Plans also cover Fargate and Lambda across families and Regions.\n- Reserved Instances: discount for a 1- or 3-year term; can be shared across accounts in an organization.\n- Spot Instances: spare capacity at large discounts, can be interrupted with a two-minute warning.\n- Dedicated Hosts (BYOL, physical server visibility), Dedicated Instances, Capacity Reservations (capacity, no discount).\n- Data transfer in from the internet is generally free; out to the internet, between Regions and between AZs is charged.\n\nRead more: https://docs.aws.amazon.com/savingsplans/latest/userguide/what-is-savings-plans.html",
+    "commonMistakes": [
+      "Using Spot for work that cannot be interrupted.",
+      "Expecting Capacity Reservations to lower the price."
+    ],
+    "tags": [
+      "domain-4",
+      "task-4.1"
+    ]
+  },
+  {
+    "id": "cost-management-tools",
+    "title": "Cost management tools",
+    "body": "- AWS Budgets: alerts when actual or forecasted cost or usage passes a threshold.\n- AWS Cost Explorer: visualize, analyze and forecast spend.\n- AWS Pricing Calculator: estimate the cost of a planned architecture.\n- AWS Cost and Usage Report: the most detailed billing data.\n- Cost allocation tags must be activated before they appear in Cost Explorer and the Cost and Usage Report.\n\nRead more: https://docs.aws.amazon.com/cost-management/latest/userguide/what-is-costmanagement.html",
+    "commonMistakes": [
+      "Using Cost Explorer for threshold alerts; that is AWS Budgets.",
+      "Expecting tags to show up in billing reports without activating them."
+    ],
+    "tags": [
+      "domain-4",
+      "task-4.2"
+    ]
+  },
+  {
+    "id": "support-plans",
+    "title": "AWS Support plans and resources",
+    "body": "- Basic Support (all customers): customer service, documentation, whitepapers, AWS re:Post, core Trusted Advisor checks, AWS Health Dashboard.\n- Business Support+: minimum recommended for production; 24/7 phone, web and chat with engineers; full Trusted Advisor checks.\n- Enterprise Support: adds a designated Technical Account Manager and faster response for business-critical workloads.\n- Unified Operations: for mission-critical workloads, fastest response.\n\nOther resources: AWS Knowledge Center and re:Post, AWS Prescriptive Guidance, AWS Professional Services, AWS Partners and AWS Marketplace. Report abuse from AWS resources to the AWS Trust and Safety team.\n\nRead more: https://aws.amazon.com/premiumsupport/plans/",
+    "commonMistakes": [
+      "Relying on older study notes: the current plans are Basic, Business Support+, Enterprise Support and Unified Operations, and legacy Business Support ends on 2027-01-01.",
+      "Expecting a Technical Account Manager below Enterprise Support."
+    ],
+    "tags": [
+      "domain-4",
+      "task-4.3"
+    ]
+  }
+]
