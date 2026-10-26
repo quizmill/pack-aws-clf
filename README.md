@@ -53,6 +53,7 @@ questions go to the full bank only.
 ## Use it
 
 ```
+npx quizmill run quizmill/pack-aws-clf   # straight from GitHub
 npx quizmill run .        # http://localhost:3000
 npx quizmill validate .   # schema + cross-reference checks
 ```
