@@ -8,6 +8,11 @@ support, across the Easy, Hard and Very hard tiers.
 
 Live at <https://aws-clf.quizmill.dev>.
 
+The app's upgrade card (on Home, and in Settings → Packs) links to the full
+bank, and the manifest names it (`upgrade.packId`, with `upgrade.unlockUrl`
+as the service), so a licence key for `aws-clf-full` unlocks it **in place**
+next to the sample, with progress kept per pack.
+
 > **Unofficial.** Not affiliated with or endorsed by AWS. This is community
 > study material — every question is `reviewStatus: "draft"`; cross-check
 > against the AWS docs and the official practice set.
