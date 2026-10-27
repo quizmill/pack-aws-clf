@@ -71,5 +71,13 @@
       "blurb": "Domains, weights and task statements follow the official AWS Certified Cloud Practitioner (CLF-C02) exam guide.",
       "url": "https://docs.aws.amazon.com/aws-certification/latest/cloud-practitioner-02/cloud-practitioner-02.html"
     }
-  ]
+  ],
+  "upgrade": {
+    "title": "Get the full bank — 79 questions",
+    "url": "https://buy.stripe.com/eVq7sFdgl1N3aqBfZn1Jm00?client_reference_id=aws-clf-full",
+    "price": "$3",
+    "blurb": "This app is a 30-question sample. The full bank has all 79 questions across the same four domains and three tiers, unlocks in place with a licence key under Packs → Have a licence key?, and gets new questions as updates.",
+    "packId": "aws-clf-full",
+    "unlockUrl": "https://sync.quizmill.dev"
+  }
 }
