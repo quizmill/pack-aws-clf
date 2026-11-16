@@ -844,11 +844,11 @@
       },
       {
         "key": "D",
-        "text": "Amazon DynamoDB",
-        "explanation": "DynamoDB is a serverless NoSQL service with no server and is not MySQL."
+        "text": "Amazon Lightsail managed database",
+        "explanation": "Lightsail databases are managed like RDS: AWS runs the host and the customer gets no operating system access to install agents."
       }
     ],
-    "explanation": "Managed databases such as Amazon RDS and Aurora handle patching, backups and failover but do not allow shell access to the host. When software must be installed on the database server, the company runs the database on EC2 and takes on its management. DynamoDB is not a MySQL option. Read more: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/rds-custom.html",
+    "explanation": "Managed databases such as Amazon RDS for MySQL, Aurora and Lightsail databases handle patching, backups and failover but do not give the customer shell access to the host, so nothing can be installed on its operating system. When software must be installed on the database server, the company runs MySQL on EC2 and takes on its management. (Amazon RDS Custom is the managed exception that grants OS access, but it supports only Oracle and SQL Server.) Read more: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/rds-custom.html",
     "source": "original",
     "sourceRef": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/rds-custom.html",
     "reviewStatus": "draft",
@@ -1051,11 +1051,11 @@
       },
       {
         "key": "D",
-        "text": "Amazon SES",
-        "explanation": "SES sends and receives email, not messages between application components."
+        "text": "AWS Step Functions",
+        "explanation": "Step Functions orchestrates workflow steps and calls each one itself; it is not a buffer that a separate service pulls work from when it is ready."
       }
     ],
-    "explanation": "SQS is a managed message queue that decouples components: producers send messages, and messages are stored until a consumer receives and deletes them, so a slow or failed consumer does not lose work. SNS and EventBridge push messages to targets, and SES is email. Read more: https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/welcome.html",
+    "explanation": "SQS is a managed message queue that decouples components: producers send messages, and messages are stored until a consumer receives and deletes them, so a slow or failed consumer does not lose work. SNS and EventBridge push messages to targets, and Step Functions coordinates the steps of a workflow rather than holding work for a consumer. Read more: https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/welcome.html",
     "source": "original",
     "sourceRef": "https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/welcome.html",
     "reviewStatus": "draft",
@@ -1078,7 +1078,7 @@
       {
         "key": "A",
         "text": "On-Demand Instances",
-        "explanation": "On-Demand is never interrupted but costs the most per hour."
+        "explanation": "On-Demand Instances are not interrupted but cost more per hour than Spot or Reserved Instances."
       },
       {
         "key": "B",
