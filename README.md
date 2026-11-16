@@ -1,3 +1,5 @@
+> **This repo has moved.** The pack now lives in [quizmill/packs-aws](https://github.com/quizmill/packs-aws), directory [`aws-clf`](https://github.com/quizmill/packs-aws/tree/main/aws-clf), with its history. This repo is archived and frozen at its content of 2026-11-16.
+
 # pack-aws-clf — a quizmill learning pack
 
 Practice for the **AWS Certified Cloud Practitioner (CLF-C02)** exam
